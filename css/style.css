@@ -1,0 +1,126 @@
+.container-header {
+  width: 1184px;
+  margin: 0 auto;
+  background-color: lightblue;
+  padding: 36.5px 0;
+}
+
+/* base classses */
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+/*  */
+
+.navigation-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 428px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.right-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.login {
+  width: 105px;
+  height: 49px;
+  color: #000;
+}
+.signup {
+  width: 115px;
+  height: 49px;
+  background-color: blueviolet;
+  color: #fff;
+  border-radius: 100px;
+}
+
+/* section # 2 styles */
+.boxes {
+  width: 441px;
+  height: 334px;
+  background-color: lightcoral;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  row-gap: 32px;
+  -webkit-column-gap: 32px;
+  -moz-column-gap: 32px;
+  column-gap: 32px;
+  /* justify-content: space-between; */
+  /* align-content: space-between; */
+}
+.block-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.box {
+  width: 204.5px;
+  height: 151px;
+  border-radius: 32px;
+  border: 1px solid #191825;
+  /* opacity: 10%; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+/* pseudo elements */
+.descr::before {
+  content: "Good Morning";
+  color: red;
+}
+.descr::after {
+  content: "";
+  margin-left: 30px;
+  width: 2px;
+  height: 25px;
+  background-color: red;
+  display: inline-block;
+}
+
+.nav-a {
+  position: relative;
+}
+.nav-a::after {
+  content: "";
+  height: 1px;
+  width: 0%;
+  background-color: blue;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 3s;
+}
+.nav-a:hover::after {
+  width: 100%;
+}
